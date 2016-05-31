@@ -1,5 +1,8 @@
 class MyCar
 
+  attr_accessor :color
+  attr_reader :year
+
   def initialize(year, model, color)
     @year = year
     @model = model
@@ -40,12 +43,6 @@ lumina.current_speed
 lumina.shut_down
 lumina.current_speed
 
-
-class MyCar
-  attr_accessor :color
-  attr_reader :year
-  # ... rest of class left out for brevity
-end
 
 lumina.color = 'black'
 puts lumina.color
