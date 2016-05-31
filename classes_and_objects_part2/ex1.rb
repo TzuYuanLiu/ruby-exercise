@@ -39,6 +39,10 @@ class MyCar
     puts "#{miles / gallons} miles per gallon of gas"
   end
 
+  def to_s
+    "My car is a #{color}, #{year}, #{@model}!"
+  end
+
 end
 
 lumina = MyCar.new(1997, 'chevy lumina', 'white')
