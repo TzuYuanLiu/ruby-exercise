@@ -8,6 +8,7 @@ class MyCar
   end
 
   def speed_up(number)
+    color = "red"
     @current_speed += number
     puts "You push the gas and accelerate #{number} mph."
   end
@@ -38,3 +39,6 @@ lumina.brake(20)
 lumina.current_speed
 lumina.shut_down
 lumina.current_speed
+
+puts MyCar.ancestors
+puts Class.ancestors
